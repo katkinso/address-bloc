@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/katkinso/address-bloc/issues"
   },
-  "homepage": "https://github.com/katkinso/address-bloc#readme"
+  "homepage": "https://github.com/katkinso/address-bloc#readme",
+  "dependencies": {
+    "inquirer": "^5.1.0"
+  }
 }
