@@ -44,10 +44,9 @@ module.exports = class MenuController {
 
   addContact(){
     this.clear();
-    console.log("here")
     inquirer.prompt(this.book.addContactQuestions).then((answers) => {
+      console.log(answers)
       this.book.addContact(answers.name, answers.phone).then((contact) => {
-        console.log(contact + "doe")
         console.log("Contact added successfully!");
         this.main();
       }).catch((err) => {
@@ -55,7 +54,6 @@ module.exports = class MenuController {
         this.main();
       });
     });
-    this.main();
   }
 
   exit(){
@@ -67,6 +65,5 @@ module.exports = class MenuController {
     //method definition
     return this.contacts.length;
   }
-
 
 }
